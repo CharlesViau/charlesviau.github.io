@@ -1,0 +1,136 @@
+<!DOCTYPE HTML>
+<!--
+	Prologue by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Charles Viau - Siege Master</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/moi.jpg" alt="" /></span>
+							<h1 id="title">Charles Viau</h1>
+							<p>Game Programmer</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+                                <li><a href="index.html" id="top-link"><span class="icon solid fa-home">Home</span></a></li>
+								<li><a href="#top" id="top-link"><span class="icon solid fa-home">Introduction</span></a></li>
+								<li><a href="#about" id="about-link"><span class="icon solid fa-user">About The Project</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link"><span class="icon solid fa-th">Photo & Videos</span></a></li>
+							</ul>
+						</nav>
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/charles-viau-66a54296/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/CharlesViau" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto: charles_violon@hotmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+				</div>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+                                <iframe width="1120" height="630" src="https://www.youtube.com/embed/SMNeM3ETvgs" 
+                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen></iframe>
+							</header>
+							<div>
+								<a href="https://github.com/CharlesViau/SiegeMaster" class="button scrolly">Check on GitHub</a>
+							</div>
+						</div>
+					</section>
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+							<header>
+								<h2>About The Project</h2>
+							</header>
+                            <h3>Description</h3>
+                            <p> Siege Master is a 3rd person tower defense game with RPG element that is also <strong>VR Compatible</strong> (1st person).<br />
+                                You have to defend a magical portal against 10 waves of enemies by placing different towers and using different spells.<br/>
+                                 If you suceed you may challenge THE BOSS and become the siege master.
+                            </p>
+                                 
+                            <h3>Technologies</h3>
+                            <dl>
+                            <dt><strong>Language</strong></dt>
+                            <dd>C#</dd>
+                            <dt><strong>Software & Ressources</strong></dt>
+                            <dd>Unity, Rider, Blender, Mixamo</dd>
+                            <dt><strong>Unity Specifics</strong></dt>
+                            <dd>New Input System, Cinemachine, Scriptable Object, </br> XR toolkit, UI, etc. </dd>
+                            </dl>	
+                            
+                            <h3>My Role</h3>
+							<p>
+                                On this projet we were three persons. My role was to <strong>make the core architecture</strong> of the project by creating a <strong>game manager</strong> that uses 
+                                <strong>reflection</strong> to gather all managers in the game and update them all using the unity update function as a <strong>single point of entry</strong>.  
+                                The other <strong>managers</strong> that I've build <strong>are generic and can be use to manage any type of object</strong>. 
+                                One type of generic manager I’ve built includes a <strong>factory</strong> and an <strong>object pool</strong>. The manager act as a <strong>façade</strong> 
+                                to ensure the proper use of the factory and the pool. Those are also <strong>singleton</strong>, automatically inherited with the generic <strong>template</strong>. 
+                            </p>
+                            <p>
+                                My other tasks consisted of <strong>building the player controls</strong> using the <strong>new input system</strong> and <strong>cinemachine</strong>, 
+                                along with the <strong>ability system</strong>. This system is generic enough to be use by the player or an AI. the controls are using the <strong>command pattern</strong>. 
+                                The abilities, the projectile and the towers and even the AI in our game use the <strong>strategy pattern</strong>. We can exchange <strong>scriptable object</strong> 
+                                on the component of the concreate object to create infinite content and types of object. 
+                                The abilities implement a <strong>state machine</strong> for code clarity and run more smoothly as abilities can vary and have different requirements. The state machine 
+                                I use is also a generic one that I have built. On a side note, I also did all the UI
+                                
+							</p>
+						</div>
+					</section>
+                <!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Photos & Videos</h2>
+							</header>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
